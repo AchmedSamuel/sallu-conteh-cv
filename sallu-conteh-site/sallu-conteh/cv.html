@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sallu Conteh — CV</title>
+  <meta name="description" content="Printable CV of Sallu Conteh, Electrical and Electronic Engineer." />
+  <meta name="robots" content="noindex" />
+  <style>
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Source Sans 3"; font-weight: 400; src: url("assets/fonts/source-sans-3-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Source Sans 3"; font-weight: 600; src: url("assets/fonts/source-sans-3-latin-600-normal.woff2") format("woff2"); }
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Source Sans 3", Arial, sans-serif; font-size: 8.9pt; line-height: 1.3; color: #13231A; background: #E9E4D8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar { max-width: 210mm; margin: 12px auto; display: flex; justify-content: flex-end; gap: 8px; font-size: 14px; }
+    .toolbar a, .toolbar button { font: inherit; padding: 8px 14px; border-radius: 999px; border: 1px solid #C9BFA8; background: #fff; color: #13231A; cursor: pointer; text-decoration: none; }
+    .toolbar button { background: #1F6B45; border-color: #1F6B45; color: #fff; font-weight: 600; }
+    .sheet { width: 210mm; min-height: 297mm; margin: 0 auto 24px; background: #fff; display: grid; grid-template-columns: 66mm 1fr; }
+    aside { background: #0F2A1C; color: #E9EFE9; padding: 10mm 6.5mm 8mm 7.5mm; }
+    aside img { width: 30mm; height: 30mm; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 5mm; border: 3px solid #E3A21A; }
+    aside h1 { font-family: Manrope, sans-serif; font-size: 19pt; font-weight: 800; line-height: 1.05; color: #fff; text-align: center; }
+    .title { text-align: center; color: #E3A21A; font-family: Manrope, sans-serif; font-weight: 700; font-size: 8.8pt; margin: 1.5mm 0 4mm; }
+    aside h2 { font-family: Manrope, sans-serif; font-size: 8.5pt; letter-spacing: .14em; text-transform: uppercase; color: #E3A21A; margin: 4mm 0 1.6mm; padding-bottom: .8mm; border-bottom: 1px solid rgba(255,255,255,.18); }
+    aside ul { list-style: none; }
+    aside li { margin-bottom: 1mm; padding-left: 3.2mm; position: relative; font-size: 8.5pt; color: #D9E3DB; }
+    aside li::before { content: ""; position: absolute; left: 0; top: 1.6mm; width: 1.4mm; height: 1.4mm; background: #E3A21A; transform: rotate(45deg); }
+    aside a { color: #fff; text-decoration: underline; }
+    .contact li::before { display: none; }
+    .contact li { padding-left: 0; }
+    main { padding: 8.5mm 9mm 6mm 8.5mm; }
+    main h2 { font-family: Manrope, sans-serif; font-size: 10pt; letter-spacing: .14em; text-transform: uppercase; color: #1F6B45; margin: 3.2mm 0 1.3mm; display: flex; align-items: center; gap: 2.5mm; }
+    main h2::after { content: ""; flex: 1; height: 1px; background: #E0D8C6; }
+    main h2:first-child { margin-top: 0; }
+    .profile { color: #2D3F33; }
+    .item { margin-bottom: 1.8mm; break-inside: avoid; }
+    .row { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+    .role { font-family: Manrope, sans-serif; font-weight: 800; font-size: 9.1pt; }
+    .when { font-family: Manrope, sans-serif; font-weight: 700; font-size: 8.4pt; color: #855600; white-space: nowrap; }
+    .org { color: #1F6B45; font-weight: 600; }
+    .item ul { padding-left: 4mm; margin-top: .5mm; color: #2D3F33; }
+    .item li { margin-bottom: .2mm; }
+    .refs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm 4mm; }
+    .refs .item { margin: 0; }
+    .small { font-size: 8.4pt; color: #536257; }
+    @media print { body { background: #fff; } .toolbar { display: none; } .sheet { margin: 0; min-height: 296mm; } }
+    @media screen and (max-width: 800px) { .sheet { width: 100%; grid-template-columns: 1fr; } .refs { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="CV page">
+    <a href="./">&larr; Back to website</a>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </nav>
+  <div class="sheet">
+    <aside>
+      <img src="assets/profile-260.jpg" alt="Sallu Conteh" width="136" height="136" />
+      <h1>Sallu Conteh</h1>
+      <div class="title">Electrical &amp; Electronic Engineer</div>
+
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><a href="mailto:contehsallu2019@gmail.com">contehsallu2019@gmail.com</a></li>
+        <li>Makeni, Sierra Leone</li>
+      </ul>
+
+      <h2>Computer &amp; IT</h2>
+      <ul>
+        <li>MS Office incl. complex Excel formulas, Access, Publisher</li>
+        <li>MATLAB incl. fuzzy logic</li>
+        <li>Visual Basic .NET</li>
+        <li>SPSS</li>
+        <li>Microcomputer engineering</li>
+        <li>Windows XP–10 installation &amp; maintenance; MS-DOS</li>
+        <li>Touch typing</li>
+      </ul>
+
+      <h2>Engineering</h2>
+      <ul>
+        <li>Preventive maintenance</li>
+        <li>HV/LV fault finding</li>
+        <li>Generator-set maintenance &amp; synchronisation</li>
+        <li>Testing &amp; inspection</li>
+        <li>Health &amp; safety</li>
+      </ul>
+
+      <h2>Strengths</h2>
+      <ul>
+        <li>Reliable and well organised</li>
+        <li>Clear communicator, incl. to non-technical people</li>
+        <li>Works well under pressure and meets deadlines</li>
+        <li>Strong problem-solving</li>
+        <li>Team player and independent learner</li>
+        <li>Professional integrity</li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Profile</h2>
+      <p class="profile">Electrical and Electronic Engineering graduate of Fourah Bay College, University of Sierra Leone, with postgraduate study in renewable energy and the environment. Hands-on experience maintaining high-voltage Caterpillar generator sets and electrical installations at MANTRAC (Caterpillar) SL Limited, and lecturing engineering and business mathematics at IAMTECH College.</p>
+
+      <h2>Experience</h2>
+      <div id="cv-xp"></div>
+
+      <h2>Education</h2>
+      <div id="cv-edu"></div>
+
+      <h2>Project</h2>
+      <div id="cv-proj"></div>
+
+      <h2>Training</h2>
+      <div id="cv-train"></div>
+
+      <h2>References</h2>
+      <div id="cv-refs" class="refs"></div>
+      <p class="small" style="margin-top:2mm">Referee contact details available on request.</p>
+    </main>
+  </div>
+  <script src="data/content.js"></script>
+  <script>
+    (function () {
+      var D = window.SITE_CONTENT || {};
+      function e(s) { return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+      function ul(a) { return a && a.length ? '<ul>' + a.map(function (x) { return '<li>' + e(x) + '</li>'; }).join('') + '</ul>' : ''; }
+      document.getElementById('cv-xp').innerHTML = (D.experience || []).map(function (x) {
+        return '<div class="item"><div class="row"><span class="role">' + e(x.role) + '</span><span class="when">' + e(x.dates) + '</span></div>' +
+          '<div class="org">' + e(x.org) + (x.place ? ' &middot; ' + e(x.place) : '') + '</div>' + ul(x.points) + '</div>';
+      }).join('');
+      document.getElementById('cv-edu').innerHTML = (D.education || []).map(function (x) {
+        return '<div class="item"><div class="row"><span class="role">' + e(x.degree) + '</span><span class="when">' + e(x.dates) + '</span></div>' +
+          (x.school ? '<div class="org">' + e(x.school) + '</div>' : '') + ul(x.notes) + '</div>';
+      }).join('');
+      document.getElementById('cv-proj').innerHTML = (D.projects || []).map(function (x) {
+        return '<div class="item"><div class="role">' + e(x.title) + '</div><div class="small">' + e(x.kind) + '</div><p class="profile">' + e(x.summary) + '</p></div>';
+      }).join('');
+      document.getElementById('cv-train').innerHTML = (D.training || []).map(function (x) {
+        return '<div class="item"><div class="row"><span class="role">' + e(x.name) + '</span><span class="when">' + e(x.date) + '</span></div><div class="org">' + e(x.issuer) + '</div></div>';
+      }).join('');
+      document.getElementById('cv-refs').innerHTML = (D.references || []).map(function (x) {
+        return '<div class="item"><div class="role">' + e(x.name) + '</div><div class="small">' + e(x.role) + ', ' + e(x.org) + '</div></div>';
+      }).join('');
+    })();
+  </script>
+</body>
+</html>
