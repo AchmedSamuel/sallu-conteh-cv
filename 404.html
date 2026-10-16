@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found | Sallu Conteh</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    :root { --bg:#FBF8F1; --surface:#fff; --ink:#13231A; --mid:#536257; --accent:#1F6B45; --border:#E6DECD; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0D1712; --surface:#15241C; --ink:#EEF3EE; --mid:#A7B9AD; --accent:#7FCB9E; --border:#233A2D; } }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1.5rem;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--ink); }
+    main { max-width: 480px; width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 2.5rem 2rem; text-align: center; }
+    .code { font-size: 3rem; font-weight: 800; color: var(--accent); letter-spacing: -.03em; }
+    h1 { font-size: 1.3rem; margin: .4rem 0 .6rem; }
+    p { color: var(--mid); font-size: .95rem; line-height: 1.6; margin-bottom: 1.5rem; }
+    a.btn { display: inline-block; padding: .75rem 1.4rem; border-radius: 6px; background: var(--accent); color: var(--surface); font-weight: 700; text-decoration: none; font-size: .9rem; }
+    a.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="code" aria-hidden="true">404</div>
+    <h1>Page not found</h1>
+    <p>The page you were looking for doesn&rsquo;t exist or has moved.</p>
+    <a class="btn" id="home-link" href="/">Go to the homepage</a>
+  </main>
+  <script>
+    /* Works for both https://USER.github.io/ and https://USER.github.io/REPO/ :
+       try the first path segment as the site root; fall back to "/". */
+    (function () {
+      var link = document.getElementById('home-link');
+      var seg = location.pathname.split('/').filter(Boolean)[0];
+      if (!seg || !/\.github\.io$/i.test(location.hostname)) return;
+      var candidate = '/' + seg + '/';
+      fetch(candidate + 'index.html', { method: 'HEAD' })
+        .then(function (r) { if (r.ok) link.href = candidate; })
+        .catch(function () {});
+    })();
+  </script>
+</body>
+</html>
